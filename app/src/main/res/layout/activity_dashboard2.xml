@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard"
+    android:background="@drawable/background_intro">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="559dp"
+        android:layout_height="868dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doctor_dash" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+    <Button
+        android:id="@+id/add_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@color/white"
+        android:padding="18dp"
+        android:text="Add patient"
+        android:textColor="#3B84F1"
+        android:textSize="28sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/veiw_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:padding="18dp"
+        android:layout_marginTop="32dp"
+        android:text="view patient"
+        android:textColor="#3B84F1"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <Button
+        android:id="@+id/delete_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:padding="18dp"
+        android:layout_marginTop="32dp"
+        android:text="Delete patient "
+        android:textColor="#3B84F1"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="499dp" />
+
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:padding="18dp"
+        android:text="Logout"
+        android:layout_marginTop="32dp"
+        android:textColor="#3B84F1"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="424dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
